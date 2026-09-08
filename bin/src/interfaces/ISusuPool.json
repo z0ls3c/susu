@@ -1,0 +1,372 @@
+{
+    "contractName": "ISusuPool",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "join",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "lock",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "orderedMembers",
+            "outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "requestOrder",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "state",
+            "outputs": [
+                {
+                    "internalType": "enum ISusuPool.PoolState",
+                    "name": "",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"join\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lock\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"orderedMembers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"requestOrder\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"state\",\"outputs\":[{\"internalType\":\"enum ISusuPool.PoolState\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPool.sol\":\"ISusuPool\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPool.sol\":{\"keccak256\":\"0xbb69b50291085799bb6486be899b2e9f4348e14b6c4d3db6c9a05efd9d3dc21b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d3bcfe397162b7d82779a8d701a8ab841c75aa465228226dd937f57ec3087ecd\",\"dweb:/ipfs/Qma1m9LSr17knFuYcZcTK7iEoQwJWx8yMoxnMn3Dz9Em45\"]}},\"version\":1}",
+    "bytecode": "",
+    "deployedBytecode": "",
+    "sourceMap": "",
+    "deployedSourceMap": "",
+    "sourcePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPool.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPool.sol",
+        "exportedSymbols": {
+            "ISusuPool": [
+                10025
+            ]
+        },
+        "id": 10026,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 9997,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".20"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:35"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ISusuPool",
+                "contractDependencies": [],
+                "contractKind": "interface",
+                "fullyImplemented": false,
+                "id": 10025,
+                "linearizedBaseContracts": [
+                    10025
+                ],
+                "name": "ISusuPool",
+                "nameLocation": "68:9:35",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "ISusuPool.PoolState",
+                        "id": 10003,
+                        "members": [
+                            {
+                                "id": 9998,
+                                "name": "Open",
+                                "nameLocation": "109:4:35",
+                                "nodeType": "EnumValue",
+                                "src": "109:4:35"
+                            },
+                            {
+                                "id": 9999,
+                                "name": "Locked",
+                                "nameLocation": "123:6:35",
+                                "nodeType": "EnumValue",
+                                "src": "123:6:35"
+                            },
+                            {
+                                "id": 10000,
+                                "name": "Ordered",
+                                "nameLocation": "139:7:35",
+                                "nodeType": "EnumValue",
+                                "src": "139:7:35"
+                            },
+                            {
+                                "id": 10001,
+                                "name": "Active",
+                                "nameLocation": "156:6:35",
+                                "nodeType": "EnumValue",
+                                "src": "156:6:35"
+                            },
+                            {
+                                "id": 10002,
+                                "name": "Closed",
+                                "nameLocation": "172:6:35",
+                                "nodeType": "EnumValue",
+                                "src": "172:6:35"
+                            }
+                        ],
+                        "name": "PoolState",
+                        "nameLocation": "89:9:35",
+                        "nodeType": "EnumDefinition",
+                        "src": "84:100:35"
+                    },
+                    {
+                        "functionSelector": "b688a363",
+                        "id": 10006,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "join",
+                        "nameLocation": "199:4:35",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10004,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "203:2:35"
+                        },
+                        "returnParameters": {
+                            "id": 10005,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "214:0:35"
+                        },
+                        "scope": 10025,
+                        "src": "190:25:35",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "functionSelector": "f83d08ba",
+                        "id": 10009,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "lock",
+                        "nameLocation": "229:4:35",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10007,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "233:2:35"
+                        },
+                        "returnParameters": {
+                            "id": 10008,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "244:0:35"
+                        },
+                        "scope": 10025,
+                        "src": "220:25:35",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "functionSelector": "9bdaf920",
+                        "id": 10012,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "requestOrder",
+                        "nameLocation": "303:12:35",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10010,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "315:2:35"
+                        },
+                        "returnParameters": {
+                            "id": 10011,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "326:0:35"
+                        },
+                        "scope": 10025,
+                        "src": "294:33:35",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "functionSelector": "77a2c180",
+                        "id": 10018,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "orderedMembers",
+                        "nameLocation": "364:14:35",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10013,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "378:2:35"
+                        },
+                        "returnParameters": {
+                            "id": 10017,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10016,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10018,
+                                    "src": "404:16:35",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                                        "typeString": "address[]"
+                                    },
+                                    "typeName": {
+                                        "baseType": {
+                                            "id": 10014,
+                                            "name": "address",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "404:7:35",
+                                            "stateMutability": "nonpayable",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "id": 10015,
+                                        "nodeType": "ArrayTypeName",
+                                        "src": "404:9:35",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                                            "typeString": "address[]"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "403:18:35"
+                        },
+                        "scope": 10025,
+                        "src": "355:67:35",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "functionSelector": "c19d93fb",
+                        "id": 10024,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "state",
+                        "nameLocation": "436:5:35",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10019,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "441:2:35"
+                        },
+                        "returnParameters": {
+                            "id": 10023,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10022,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10024,
+                                    "src": "467:9:35",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_PoolState_$10003",
+                                        "typeString": "enum ISusuPool.PoolState"
+                                    },
+                                    "typeName": {
+                                        "id": 10021,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 10020,
+                                            "name": "PoolState",
+                                            "nameLocations": [
+                                                "467:9:35"
+                                            ],
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 10003,
+                                            "src": "467:9:35"
+                                        },
+                                        "referencedDeclaration": 10003,
+                                        "src": "467:9:35",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_enum$_PoolState_$10003",
+                                            "typeString": "enum ISusuPool.PoolState"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "466:11:35"
+                        },
+                        "scope": 10025,
+                        "src": "427:51:35",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 10026,
+                "src": "58:422:35",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:449:35"
+    },
+    "functionHashes": {
+        "join()": "b688a363",
+        "lock()": "f83d08ba",
+        "orderedMembers()": "77a2c180",
+        "requestOrder()": "9bdaf920",
+        "state()": "c19d93fb"
+    },
+    "gasEstimates": null
+}

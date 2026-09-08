@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"address","name":"pool","type":"address"}],"name":"requestHandOrder","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]

@@ -1,0 +1,139 @@
+{
+    "contractName": "ISusuPoolVRFReceiver",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "seed",
+                    "type": "uint256"
+                }
+            ],
+            "name": "fulfillHandOrder",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"seed\",\"type\":\"uint256\"}],\"name\":\"fulfillHandOrder\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"fulfillHandOrder(uint256)\":{\"params\":{\"seed\":\"A single random word to derive the full payout order on-chain\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"fulfillHandOrder(uint256)\":{\"notice\":\"Called by SusuVRFManager when randomness arrives\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPoolVRFReceiver.sol\":\"ISusuPoolVRFReceiver\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPoolVRFReceiver.sol\":{\"keccak256\":\"0xba8389179f917cf6f58db26610fa8980e73fa92f61ac6fd964adb4173c2b3510\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c928e8ec5c9d8507742d93843402b0d561e488a36710b7dbf80a560df9b29e8\",\"dweb:/ipfs/QmPhfP34BjrZ7tQmD9pU59S5VA833ZGE2TQsvCA14xrNHt\"]}},\"version\":1}",
+    "bytecode": "",
+    "deployedBytecode": "",
+    "sourceMap": "",
+    "deployedSourceMap": "",
+    "sourcePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPoolVRFReceiver.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuPoolVRFReceiver.sol",
+        "exportedSymbols": {
+            "ISusuPoolVRFReceiver": [
+                10034
+            ]
+        },
+        "id": 10035,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 10027,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".20"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:36"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ISusuPoolVRFReceiver",
+                "contractDependencies": [],
+                "contractKind": "interface",
+                "fullyImplemented": false,
+                "id": 10034,
+                "linearizedBaseContracts": [
+                    10034
+                ],
+                "name": "ISusuPoolVRFReceiver",
+                "nameLocation": "68:20:36",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "documentation": {
+                            "id": 10028,
+                            "nodeType": "StructuredDocumentation",
+                            "src": "95:142:36",
+                            "text": "@notice Called by SusuVRFManager when randomness arrives\n @param seed A single random word to derive the full payout order on-chain"
+                        },
+                        "functionSelector": "8c239d07",
+                        "id": 10033,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "fulfillHandOrder",
+                        "nameLocation": "251:16:36",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10031,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10030,
+                                    "mutability": "mutable",
+                                    "name": "seed",
+                                    "nameLocation": "276:4:36",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10033,
+                                    "src": "268:12:36",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 10029,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "268:7:36",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "267:14:36"
+                        },
+                        "returnParameters": {
+                            "id": 10032,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "290:0:36"
+                        },
+                        "scope": 10034,
+                        "src": "242:49:36",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 10035,
+                "src": "58:235:36",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:262:36"
+    },
+    "functionHashes": {
+        "fulfillHandOrder(uint256)": "8c239d07"
+    },
+    "gasEstimates": null
+}

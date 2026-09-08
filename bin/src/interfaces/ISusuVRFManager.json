@@ -1,0 +1,174 @@
+{
+    "contractName": "ISusuVRFManager",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "pool",
+                    "type": "address"
+                }
+            ],
+            "name": "requestHandOrder",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"}],\"name\":\"requestHandOrder\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"requestHandOrder(address)\":{\"params\":{\"pool\":\"The address of the SusuPool requesting randomness\"},\"returns\":{\"_0\":\"requestId The VRF request ID\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"requestHandOrder(address)\":{\"notice\":\"Request a new hand order for the given pool\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuVRFManager.sol\":\"ISusuVRFManager\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuVRFManager.sol\":{\"keccak256\":\"0x22a66cab7dd3b6a6caf6d1cca54e3b55f894b63dc9f74bc1526567ac04207eb6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://85943a9737ed9de0bb0478d57dafda574868fd138772d42446568e572556a58d\",\"dweb:/ipfs/QmUwYkRJzvM8MjQaWiD6RVDo8EaoJBW3SwbvsghHtBURHz\"]}},\"version\":1}",
+    "bytecode": "",
+    "deployedBytecode": "",
+    "sourceMap": "",
+    "deployedSourceMap": "",
+    "sourcePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuVRFManager.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/interfaces/ISusuVRFManager.sol",
+        "exportedSymbols": {
+            "ISusuVRFManager": [
+                10045
+            ]
+        },
+        "id": 10046,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 10036,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".20"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:37"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ISusuVRFManager",
+                "contractDependencies": [],
+                "contractKind": "interface",
+                "fullyImplemented": false,
+                "id": 10045,
+                "linearizedBaseContracts": [
+                    10045
+                ],
+                "name": "ISusuVRFManager",
+                "nameLocation": "68:15:37",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "documentation": {
+                            "id": 10037,
+                            "nodeType": "StructuredDocumentation",
+                            "src": "90:170:37",
+                            "text": "@notice Request a new hand order for the given pool\n @param pool The address of the SusuPool requesting randomness\n @return requestId The VRF request ID"
+                        },
+                        "functionSelector": "786dfe9c",
+                        "id": 10044,
+                        "implemented": false,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "requestHandOrder",
+                        "nameLocation": "274:16:37",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10040,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10039,
+                                    "mutability": "mutable",
+                                    "name": "pool",
+                                    "nameLocation": "299:4:37",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10044,
+                                    "src": "291:12:37",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 10038,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "291:7:37",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "290:14:37"
+                        },
+                        "returnParameters": {
+                            "id": 10043,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10042,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10044,
+                                    "src": "323:7:37",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 10041,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "323:7:37",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "322:9:37"
+                        },
+                        "scope": 10045,
+                        "src": "265:67:37",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 10046,
+                "src": "58:276:37",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:303:37"
+    },
+    "functionHashes": {
+        "requestHandOrder(address)": "786dfe9c"
+    },
+    "gasEstimates": null
+}

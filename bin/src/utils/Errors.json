@@ -1,0 +1,910 @@
+{
+    "contractName": "Errors",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "PoolConfig__InvalidInterval",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "PoolConfig__InvalidTurn",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "PoolConfig__PoolSizeTooBig",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "PoolConfig__PoolSizeTooSmall",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuFactory__InvalidAsset",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuFactory__InvalidOracle",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__AlreadyClaimedHand",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__AlreadyJoined",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__AssetZeroAddress",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__BadOrderLength",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__CollateralNotEnabledZeroOracle",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__InvalidHand",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__MustHaveAtLeastTwoHands",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NoHandsAssigned",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NotEligible",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NotMember",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NotOrganizer",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NotVRFManager",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__NotYourTurn",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__OracleZeroAddress",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__OrderAlreadyRequested",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__OrderNotRequested",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__OrganizerZeroAddress",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolAmountZero",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolFull",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolNotOrdered",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolNotReady",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolStateIsNotOpen",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolStateNotActive",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolStateNotActiveAndOrdered",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolStateNotLocked",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__PoolStateNotOpen",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__RotationAlreadySet",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__SingleHandOnly",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__TooManyHands",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__UnderCollateralized",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__UserNotInRotation",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__VRFManagerZeroAddress",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__WaitInterval",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuPool__WrongAmount",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuVRFManager__NotFactory",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "SusuVRFManager__ZeroAddress",
+            "type": "error"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"PoolConfig__InvalidInterval\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolConfig__InvalidTurn\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolConfig__PoolSizeTooBig\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolConfig__PoolSizeTooSmall\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuFactory__InvalidAsset\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuFactory__InvalidOracle\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__AlreadyClaimedHand\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__AlreadyJoined\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__AssetZeroAddress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__BadOrderLength\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__CollateralNotEnabledZeroOracle\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__InvalidHand\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__MustHaveAtLeastTwoHands\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NoHandsAssigned\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NotEligible\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NotMember\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NotOrganizer\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NotVRFManager\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__NotYourTurn\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__OracleZeroAddress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__OrderAlreadyRequested\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__OrderNotRequested\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__OrganizerZeroAddress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolAmountZero\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolFull\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolNotOrdered\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolNotReady\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolStateIsNotOpen\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolStateNotActive\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolStateNotActiveAndOrdered\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolStateNotLocked\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__PoolStateNotOpen\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__RotationAlreadySet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__SingleHandOnly\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__TooManyHands\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__UnderCollateralized\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__UserNotInRotation\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__VRFManagerZeroAddress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__WaitInterval\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuPool__WrongAmount\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuVRFManager__NotFactory\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SusuVRFManager__ZeroAddress\",\"type\":\"error\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/utils/Errors.sol\":\"Errors\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/utils/Errors.sol\":{\"keccak256\":\"0xced78d19fd39a150de2bbf8ca75231e848afd3652d65aa370bb85aba7339d1e1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5917bf740261188916e1877b29fbeec5ce6c5dd86a8b85c7a787296887099dad\",\"dweb:/ipfs/Qmf7sdZKbE3ViTmizEJTGXxuhThE5eJZQg8RdUytcDc4A5\"]}},\"version\":1}",
+    "bytecode": "6080806040523460175760399081601c823930815050f35b5f80fdfe5f80fdfea264697066735822122099b9881fd67e914d370911813f9a3d6640626d59bd36dce3d65a6912e1723b0264736f6c63430008230033",
+    "deployedBytecode": "5f80fdfea264697066735822122099b9881fd67e914d370911813f9a3d6640626d59bd36dce3d65a6912e1723b0264736f6c63430008230033",
+    "sourceMap": "58:1695:40:-:0;;;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "58:1695:40:-:0;;",
+    "sourcePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/utils/Errors.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/Users/z0l/Documents/Programming/Web3/solidity/projects/susu/src/utils/Errors.sol",
+        "exportedSymbols": {
+            "Errors": [
+                10301
+            ]
+        },
+        "id": 10302,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 10216,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".20"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:40"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Errors",
+                "contractDependencies": [],
+                "contractKind": "library",
+                "fullyImplemented": true,
+                "id": 10301,
+                "linearizedBaseContracts": [
+                    10301
+                ],
+                "name": "Errors",
+                "nameLocation": "66:6:40",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "errorSelector": "195c529e",
+                        "id": 10218,
+                        "name": "SusuPool__NotOrganizer",
+                        "nameLocation": "85:22:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10217,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "107:2:40"
+                        },
+                        "src": "79:31:40"
+                    },
+                    {
+                        "errorSelector": "e2e5c874",
+                        "id": 10220,
+                        "name": "SusuPool__NotVRFManager",
+                        "nameLocation": "121:23:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10219,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "144:2:40"
+                        },
+                        "src": "115:32:40"
+                    },
+                    {
+                        "errorSelector": "09af5932",
+                        "id": 10222,
+                        "name": "SusuPool__PoolNotReady",
+                        "nameLocation": "158:22:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10221,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "180:2:40"
+                        },
+                        "src": "152:31:40"
+                    },
+                    {
+                        "errorSelector": "805fd9c5",
+                        "id": 10224,
+                        "name": "SusuPool__AlreadyJoined",
+                        "nameLocation": "194:23:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10223,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "217:2:40"
+                        },
+                        "src": "188:32:40"
+                    },
+                    {
+                        "errorSelector": "2d021aa7",
+                        "id": 10226,
+                        "name": "SusuPool__PoolFull",
+                        "nameLocation": "231:18:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10225,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "249:2:40"
+                        },
+                        "src": "225:27:40"
+                    },
+                    {
+                        "errorSelector": "25000013",
+                        "id": 10228,
+                        "name": "SusuPool__NotMember",
+                        "nameLocation": "263:19:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10227,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "282:2:40"
+                        },
+                        "src": "257:28:40"
+                    },
+                    {
+                        "errorSelector": "9f67de11",
+                        "id": 10230,
+                        "name": "SusuPool__NotYourTurn",
+                        "nameLocation": "296:21:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10229,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "317:2:40"
+                        },
+                        "src": "290:30:40"
+                    },
+                    {
+                        "errorSelector": "e3ebe2ed",
+                        "id": 10232,
+                        "name": "SusuPool__NotEligible",
+                        "nameLocation": "331:21:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10231,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "352:2:40"
+                        },
+                        "src": "325:30:40"
+                    },
+                    {
+                        "errorSelector": "ceb6189a",
+                        "id": 10234,
+                        "name": "SusuPool__PoolNotOrdered",
+                        "nameLocation": "366:24:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10233,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "390:2:40"
+                        },
+                        "src": "360:33:40"
+                    },
+                    {
+                        "errorSelector": "84db70a2",
+                        "id": 10236,
+                        "name": "SusuPool__WrongAmount",
+                        "nameLocation": "404:21:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10235,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "425:2:40"
+                        },
+                        "src": "398:30:40"
+                    },
+                    {
+                        "errorSelector": "0f4f4f74",
+                        "id": 10238,
+                        "name": "SusuPool__UnderCollateralized",
+                        "nameLocation": "439:29:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10237,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "468:2:40"
+                        },
+                        "src": "433:38:40"
+                    },
+                    {
+                        "errorSelector": "caeafa71",
+                        "id": 10240,
+                        "name": "SusuPool__OrganizerZeroAddress",
+                        "nameLocation": "482:30:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10239,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "512:2:40"
+                        },
+                        "src": "476:39:40"
+                    },
+                    {
+                        "errorSelector": "457b6fa0",
+                        "id": 10242,
+                        "name": "SusuPool__AssetZeroAddress",
+                        "nameLocation": "526:26:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10241,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "552:2:40"
+                        },
+                        "src": "520:35:40"
+                    },
+                    {
+                        "errorSelector": "d191015a",
+                        "id": 10244,
+                        "name": "SusuPool__OracleZeroAddress",
+                        "nameLocation": "566:27:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10243,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "593:2:40"
+                        },
+                        "src": "560:36:40"
+                    },
+                    {
+                        "errorSelector": "d3ff2488",
+                        "id": 10246,
+                        "name": "SusuPool__VRFManagerZeroAddress",
+                        "nameLocation": "607:31:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10245,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "638:2:40"
+                        },
+                        "src": "601:40:40"
+                    },
+                    {
+                        "errorSelector": "fc1a5450",
+                        "id": 10248,
+                        "name": "SusuPool__CollateralNotEnabledZeroOracle",
+                        "nameLocation": "652:40:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10247,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "692:2:40"
+                        },
+                        "src": "646:49:40"
+                    },
+                    {
+                        "errorSelector": "6a57c748",
+                        "id": 10250,
+                        "name": "SusuPool__MustHaveAtLeastTwoHands",
+                        "nameLocation": "706:33:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10249,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "739:2:40"
+                        },
+                        "src": "700:42:40"
+                    },
+                    {
+                        "errorSelector": "80e39739",
+                        "id": 10252,
+                        "name": "SusuPool__TooManyHands",
+                        "nameLocation": "753:22:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10251,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "775:2:40"
+                        },
+                        "src": "747:31:40"
+                    },
+                    {
+                        "errorSelector": "7ccb7bcf",
+                        "id": 10254,
+                        "name": "SusuPool__NoHandsAssigned",
+                        "nameLocation": "789:25:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10253,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "814:2:40"
+                        },
+                        "src": "783:34:40"
+                    },
+                    {
+                        "errorSelector": "39685031",
+                        "id": 10256,
+                        "name": "SusuPool__PoolAmountZero",
+                        "nameLocation": "828:24:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10255,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "852:2:40"
+                        },
+                        "src": "822:33:40"
+                    },
+                    {
+                        "errorSelector": "431562b6",
+                        "id": 10258,
+                        "name": "SusuPool__PoolStateIsNotOpen",
+                        "nameLocation": "866:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10257,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "894:2:40"
+                        },
+                        "src": "860:37:40"
+                    },
+                    {
+                        "errorSelector": "8f1d6f7c",
+                        "id": 10260,
+                        "name": "PoolConfig__InvalidInterval",
+                        "nameLocation": "908:27:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10259,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "935:2:40"
+                        },
+                        "src": "902:36:40"
+                    },
+                    {
+                        "errorSelector": "656e48ae",
+                        "id": 10262,
+                        "name": "SusuPool__RotationAlreadySet",
+                        "nameLocation": "949:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10261,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "977:2:40"
+                        },
+                        "src": "943:37:40"
+                    },
+                    {
+                        "errorSelector": "1cc8c192",
+                        "id": 10264,
+                        "name": "SusuPool__SingleHandOnly",
+                        "nameLocation": "991:24:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10263,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1015:2:40"
+                        },
+                        "src": "985:33:40"
+                    },
+                    {
+                        "errorSelector": "0420c98a",
+                        "id": 10266,
+                        "name": "SusuPool__InvalidHand",
+                        "nameLocation": "1029:21:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10265,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1050:2:40"
+                        },
+                        "src": "1023:30:40"
+                    },
+                    {
+                        "errorSelector": "99e8b224",
+                        "id": 10268,
+                        "name": "SusuPool__AlreadyClaimedHand",
+                        "nameLocation": "1064:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10267,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1092:2:40"
+                        },
+                        "src": "1058:37:40"
+                    },
+                    {
+                        "errorSelector": "95428f1e",
+                        "id": 10270,
+                        "name": "SusuPool__BadOrderLength",
+                        "nameLocation": "1106:24:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10269,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1130:2:40"
+                        },
+                        "src": "1100:33:40"
+                    },
+                    {
+                        "errorSelector": "b55adeef",
+                        "id": 10272,
+                        "name": "SusuPool__WaitInterval",
+                        "nameLocation": "1144:22:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10271,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1166:2:40"
+                        },
+                        "src": "1138:31:40"
+                    },
+                    {
+                        "errorSelector": "cdf92b50",
+                        "id": 10274,
+                        "name": "SusuPool__UserNotInRotation",
+                        "nameLocation": "1180:27:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10273,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1207:2:40"
+                        },
+                        "src": "1174:36:40"
+                    },
+                    {
+                        "errorSelector": "20de5322",
+                        "id": 10276,
+                        "name": "SusuPool__PoolStateNotOpen",
+                        "nameLocation": "1221:26:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10275,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1247:2:40"
+                        },
+                        "src": "1215:35:40"
+                    },
+                    {
+                        "errorSelector": "a34826aa",
+                        "id": 10278,
+                        "name": "SusuPool__PoolStateNotLocked",
+                        "nameLocation": "1261:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10277,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1289:2:40"
+                        },
+                        "src": "1255:37:40"
+                    },
+                    {
+                        "errorSelector": "05fdc7da",
+                        "id": 10280,
+                        "name": "SusuPool__PoolStateNotActive",
+                        "nameLocation": "1303:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10279,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1331:2:40"
+                        },
+                        "src": "1297:37:40"
+                    },
+                    {
+                        "errorSelector": "8326016a",
+                        "id": 10282,
+                        "name": "SusuPool__PoolStateNotActiveAndOrdered",
+                        "nameLocation": "1345:38:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10281,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1383:2:40"
+                        },
+                        "src": "1339:47:40"
+                    },
+                    {
+                        "errorSelector": "0685ab7f",
+                        "id": 10284,
+                        "name": "SusuPool__OrderAlreadyRequested",
+                        "nameLocation": "1397:31:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10283,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1428:2:40"
+                        },
+                        "src": "1391:40:40"
+                    },
+                    {
+                        "errorSelector": "6af021f7",
+                        "id": 10286,
+                        "name": "SusuPool__OrderNotRequested",
+                        "nameLocation": "1442:27:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10285,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1469:2:40"
+                        },
+                        "src": "1436:36:40"
+                    },
+                    {
+                        "errorSelector": "b1339cfd",
+                        "id": 10288,
+                        "name": "SusuFactory__InvalidAsset",
+                        "nameLocation": "1483:25:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10287,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1508:2:40"
+                        },
+                        "src": "1477:34:40"
+                    },
+                    {
+                        "errorSelector": "16cde8c4",
+                        "id": 10290,
+                        "name": "SusuFactory__InvalidOracle",
+                        "nameLocation": "1522:26:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10289,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1548:2:40"
+                        },
+                        "src": "1516:35:40"
+                    },
+                    {
+                        "errorSelector": "6388112d",
+                        "id": 10292,
+                        "name": "PoolConfig__InvalidTurn",
+                        "nameLocation": "1562:23:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10291,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1585:2:40"
+                        },
+                        "src": "1556:32:40"
+                    },
+                    {
+                        "errorSelector": "0dcf8243",
+                        "id": 10294,
+                        "name": "PoolConfig__PoolSizeTooSmall",
+                        "nameLocation": "1599:28:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10293,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1627:2:40"
+                        },
+                        "src": "1593:37:40"
+                    },
+                    {
+                        "errorSelector": "aaefa0a5",
+                        "id": 10296,
+                        "name": "PoolConfig__PoolSizeTooBig",
+                        "nameLocation": "1641:26:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10295,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1667:2:40"
+                        },
+                        "src": "1635:35:40"
+                    },
+                    {
+                        "errorSelector": "a7d14482",
+                        "id": 10298,
+                        "name": "SusuVRFManager__ZeroAddress",
+                        "nameLocation": "1681:27:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10297,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1708:2:40"
+                        },
+                        "src": "1675:36:40"
+                    },
+                    {
+                        "errorSelector": "d99f2b29",
+                        "id": 10300,
+                        "name": "SusuVRFManager__NotFactory",
+                        "nameLocation": "1722:26:40",
+                        "nodeType": "ErrorDefinition",
+                        "parameters": {
+                            "id": 10299,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1748:2:40"
+                        },
+                        "src": "1716:35:40"
+                    }
+                ],
+                "scope": 10302,
+                "src": "58:1695:40",
+                "usedErrors": [
+                    10218,
+                    10220,
+                    10222,
+                    10224,
+                    10226,
+                    10228,
+                    10230,
+                    10232,
+                    10234,
+                    10236,
+                    10238,
+                    10240,
+                    10242,
+                    10244,
+                    10246,
+                    10248,
+                    10250,
+                    10252,
+                    10254,
+                    10256,
+                    10258,
+                    10260,
+                    10262,
+                    10264,
+                    10266,
+                    10268,
+                    10270,
+                    10272,
+                    10274,
+                    10276,
+                    10278,
+                    10280,
+                    10282,
+                    10284,
+                    10286,
+                    10288,
+                    10290,
+                    10292,
+                    10294,
+                    10296,
+                    10298,
+                    10300
+                ],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:1722:40"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "11400",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        }
+    }
+}

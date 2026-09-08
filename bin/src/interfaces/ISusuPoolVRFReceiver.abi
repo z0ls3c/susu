@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"uint256","name":"seed","type":"uint256"}],"name":"fulfillHandOrder","outputs":[],"stateMutability":"nonpayable","type":"function"}]
