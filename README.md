@@ -4,9 +4,16 @@
 
 # Susu
 
-**Susu** is a decentralized take on the rotating savings circle. The informal community-savings model found across the African, Caribbean, and Latin American diaspora under names like susu, tanda, partner, hui, and kameti. A group of participants each contribute a fixed amount every interval into a shared pot, and the entire pot is paid out to one member that round. The order rotates until everyone has been paid, at which point the cycle ends. Real-world susu runs on social trust. The aunty, the coworker, the church group. This project replaces that trust with collateral and smart contracts, so people who don't have a circle can still join one.
+A Solidity implementation of the informal **susu** rotating savings circle,
+built as a security-focused DeFi primitive.
 
-This repo is currently a **security-focused learning project** by [z0ls3c](https://github.com/z0ls3c). Built deliberately to practice protocol design and self-audit discipline before any production push. The contracts are written with security review baked into the development loop: issues are surfaced, documented in [`KNOWN_ISSUES.md`](./KNOWN_ISSUES.md), and resolved publicly through commits. Longer-term, the project is exploring a real-product direction around **programmable reputation across pools**, completing a pool cleanly builds an on-chain history that earns reduced collateral requirements on future pools, something off-chain susu cannot do. Until then, **the code is not audited, not production-ready, and not intended for use with real funds.**
+**Status:** Active development, under self-audit. **Not audited. Do not use with real funds.**
+
+## Running tests
+
+```bash
+forge install
+forge test
 
 ## Stack
 
