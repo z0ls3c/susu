@@ -29,4 +29,4 @@ Active development. See [`KNOWN_ISSUES.md`](./KNOWN_ISSUES.md) for the current l
 
 ## License
 
-MIT — see [`LICENSE`](./LICENSE).
+MIT - see [`LICENSE`](./LICENSE).
