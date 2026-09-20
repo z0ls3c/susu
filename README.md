@@ -14,6 +14,7 @@ built as a security-focused DeFi primitive.
 ```bash
 forge install
 forge test
+```
 
 ## Stack
 
